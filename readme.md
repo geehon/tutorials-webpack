@@ -63,7 +63,7 @@ npm install webpack-dev-server --save-dev
 
 ```js
 "scripts": {
-  "start:dev": "webpack server --mode development --config script/webpack.config.js"
+  "start:dev": "webpack serve --mode development --config script/webpack.config.js"
 }
 ```
 
