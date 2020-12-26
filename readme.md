@@ -67,3 +67,25 @@ npm install webpack-dev-server --save-dev
 }
 ```
 
+## 支持less
+
+安装包[less-loader](https://www.npmjs.com/package/less-loader)
+
+```powershell
+npm install less less-loader --save-dev
+```
+
+修改webpack配置
+
+```js
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.less$/,
+        loader: "less-loader", // compiles Less to CSS
+      },
+    ],
+  },
+};
+```

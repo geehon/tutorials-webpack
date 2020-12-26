@@ -21,7 +21,15 @@ module.exports = {
       {
         test: /\.css$/i,
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
-      }
+      },
+      {
+        test: /\.less$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          "less-loader"// compiles Less to CSS
+        ]
+      },
     ]
   },
   plugins: [
